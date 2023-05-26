@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import {
   Toolbar, IconButton, OutlinedInput, InputAdornment, Popover, FormControl, InputLabel, Select, MenuItem, FormGroup, FormControlLabel, Checkbox, Badge, ListItemButton, ListItemText, Tooltip,
@@ -12,6 +12,7 @@ import TuneIcon from '@mui/icons-material/Tune';
 import { useTranslation } from '../common/components/LocalizationProvider';
 import { useDeviceReadonly } from '../common/util/permissions';
 import DeviceRow from './DeviceRow';
+import { eventsActions } from '../store';
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -54,7 +55,7 @@ const MainToolbar = ({
   const inputRef = useRef();
   const [filterAnchorEl, setFilterAnchorEl] = useState(null);
   const [devicesAnchorEl, setDevicesAnchorEl] = useState(null);
-
+  const dispatch = useDispatch();
   const deviceStatusCount = (status) => Object.values(devices).filter((d) => d.status === status).length;
 
   return (
@@ -81,6 +82,7 @@ const MainToolbar = ({
         size="small"
         fullWidth
       />
+      <Checkbox title="toggle clustering" onChange={() => dispatch(eventsActions.toggleShowCluster())} />
       <Popover
         open={!!devicesAnchorEl && !devicesOpen}
         anchorEl={devicesAnchorEl}

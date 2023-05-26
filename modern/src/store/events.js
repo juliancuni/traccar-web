@@ -4,6 +4,7 @@ const { reducer, actions } = createSlice({
   name: 'events',
   initialState: {
     items: [],
+    showCluster: false,
   },
   reducers: {
     add(state, action) {
@@ -14,6 +15,9 @@ const { reducer, actions } = createSlice({
     },
     deleteAll(state) {
       state.items = [];
+    },
+    toggleShowCluster(state) {
+      state.showCluster = !state.showCluster;
     },
   },
 });

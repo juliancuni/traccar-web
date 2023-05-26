@@ -18,8 +18,8 @@ const MapPositions = ({ positions, onClick, showStatus, selectedPosition, titleF
   const iconScale = useAttributePreference('iconScale', desktop ? 0.75 : 1);
 
   const devices = useSelector((state) => state.devices.items);
-
-  const mapCluster = useAttributePreference('mapCluster', true);
+  const showCluster = useSelector((state) => state.events.showCluster);
+  const mapCluster = useAttributePreference('mapCluster', showCluster);
   const hours12 = usePreference('twelveHourFormat');
   const directionType = useAttributePreference('mapDirection', 'selected');
 
