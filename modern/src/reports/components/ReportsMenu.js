@@ -7,6 +7,7 @@ import TimelineIcon from '@mui/icons-material/Timeline';
 import PauseCircleFilledIcon from '@mui/icons-material/PauseCircleFilled';
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import EditNotificationsIcon from '@mui/icons-material/EditNotifications';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import BarChartIcon from '@mui/icons-material/BarChart';
@@ -53,6 +54,14 @@ const ReportsMenu = () => {
           icon={<NotificationsActiveIcon />}
           selected={location.pathname === '/reports/event'}
         />
+        {/* New Menu dev */}
+        <MenuItem
+          title="Events [dev]"
+          link="/reports/eventdev"
+          icon={<EditNotificationsIcon />}
+          selected={location.pathname === '/reports/eventdev'}
+        />
+        {/* End New Menu dev */}
         <MenuItem
           title={t('reportTrips')}
           link="/reports/trip"
