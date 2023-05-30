@@ -93,6 +93,9 @@ const ReportFilterDev = ({ children, handleSubmit, handleSchedule, showOnly }) =
   };
 
   const handleRadio = (ev) => {
+    dispatch(devicesActions.selectId(null));
+    dispatch(devicesActions.selectIds([]));
+    dispatch(reportsActions.updateGroupIds([]));
     switch (ev.target.value) {
       case 'single':
         setIgnoreDevice(false);

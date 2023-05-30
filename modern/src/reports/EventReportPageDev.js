@@ -79,8 +79,20 @@ const EventReportPageDev = () => {
     }
   }, []);
 
-  const handleSubmit = useCatch(async ({ deviceId, from, to, type }) => {
-    const query = new URLSearchParams({ deviceId, from, to });
+  const handleSubmit = useCatch(async ({ deviceId, deviceIds, groupIds, from, to, type }) => {
+    const query = new URLSearchParams();
+    console.log(deviceId);
+    if (deviceIds.length > 0) {
+      deviceIds.forEach((deviceId) => query.append('deviceId', deviceId));
+    }
+
+    if (groupIds.length > 0) {
+      groupIds.forEach((groupId) => query.append('groupId', groupId));
+    }
+
+    query.append('from', from);
+    query.append('to', to);
+
     eventTypes.forEach((it) => query.append('type', it));
     if (type === 'export') {
       window.location.assign(`/api/reports/events/xlsx?${query.toString()}`);
