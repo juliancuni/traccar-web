@@ -159,7 +159,7 @@
     "errorConnection": "Chyba spojení",
     "errorSocket": "Chyba připojení webového socketu",
     "errorZero": "Nemůže být nula",
-    "userEmail": "Email",
+    "userEmail": "Username",
     "userPassword": "Heslo",
     "userAdmin": "Admin",
     "userRemember": "Zapamatovat",

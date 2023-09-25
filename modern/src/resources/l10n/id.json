@@ -159,7 +159,7 @@
     "errorConnection": "Koneksi Bermasalah",
     "errorSocket": "Koneksi Web Socket Bermasalah",
     "errorZero": "Can't be zero",
-    "userEmail": "Email",
+    "userEmail": "Username",
     "userPassword": "Sandi",
     "userAdmin": "Admin",
     "userRemember": "Diingat",

@@ -159,7 +159,7 @@
     "errorConnection": "Kapcsolódási hiba",
     "errorSocket": "Kapcsolódási hiba",
     "errorZero": "Nem lehet nulla",
-    "userEmail": "Email",
+    "userEmail": "Username",
     "userPassword": "Jelszó",
     "userAdmin": "Adminisztrátor",
     "userRemember": "Megjegyez",

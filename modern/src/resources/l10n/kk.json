@@ -159,7 +159,7 @@
     "errorConnection": "Қосылу қатесі",
     "errorSocket": "Web socket біріктіру қатесі",
     "errorZero": "Can't be zero",
-    "userEmail": "Email",
+    "userEmail": "Username",
     "userPassword": "Құпиясөз",
     "userAdmin": "Әкімші",
     "userRemember": "Еске сақтау",

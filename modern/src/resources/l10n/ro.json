@@ -159,7 +159,7 @@
     "errorConnection": "Eroare de conexiune",
     "errorSocket": "Eroare conectare socket",
     "errorZero": "Nu poate fi zero",
-    "userEmail": "Email",
+    "userEmail": "Username",
     "userPassword": "Parolă",
     "userAdmin": "Admin",
     "userRemember": "Ţine minte",

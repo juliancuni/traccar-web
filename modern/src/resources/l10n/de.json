@@ -159,7 +159,7 @@
     "errorConnection": "Verbindungsfehler",
     "errorSocket": "Web Socket Verbindungsfehler",
     "errorZero": "Darf nicht leer sein",
-    "userEmail": "Email",
+    "userEmail": "Username",
     "userPassword": "Passwort",
     "userAdmin": "Admin",
     "userRemember": "Erinnern",

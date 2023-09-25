@@ -159,7 +159,7 @@
     "errorConnection": "Ошибка соединения",
     "errorSocket": "Ошибка web socket соединения",
     "errorZero": "Не может быть нулевым",
-    "userEmail": "Email",
+    "userEmail": "Username",
     "userPassword": "Пароль",
     "userAdmin": "Администратор",
     "userRemember": "Запомнить",

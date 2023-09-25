@@ -159,7 +159,7 @@
     "errorConnection": "Erro de conexión",
     "errorSocket": "Erro de conexión do socket web",
     "errorZero": "Non pode ser cero",
-    "userEmail": "Email",
+    "userEmail": "Username",
     "userPassword": "Contrasinal",
     "userAdmin": "Administrador",
     "userRemember": "Recordar",

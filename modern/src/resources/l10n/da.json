@@ -159,7 +159,7 @@
     "errorConnection": "Tilslutning fejl",
     "errorSocket": "Web tilslutnings fejl",
     "errorZero": "Kan ikke være nul",
-    "userEmail": "Email",
+    "userEmail": "Username",
     "userPassword": "Kodeord",
     "userAdmin": "Admin",
     "userRemember": "Husk",

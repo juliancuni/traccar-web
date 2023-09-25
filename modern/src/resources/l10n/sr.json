@@ -159,7 +159,7 @@
     "errorConnection": "Greška u konekciji",
     "errorSocket": "Greška u konekciji",
     "errorZero": "Ne može biti nula",
-    "userEmail": "Email",
+    "userEmail": "Username",
     "userPassword": "Lozinka",
     "userAdmin": "Admin",
     "userRemember": "Zapamti",
